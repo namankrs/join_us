@@ -8,9 +8,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
 
 var connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  database: "join_us"
+  host: "us-cdbr-iron-east-02.cleardb.net",
+  user: "b1c3f9e181629a",
+  database: "heroku_c9af6d8237f8099",
+  password: "2f18e90c"
 });
 
 app.get("/", function(req, res) {
